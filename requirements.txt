@@ -3,11 +3,7 @@ flask-cors
 google-generativeai
 langchain
 langchain-google-genai
-langchain-chroma
-chromadb
 python-dotenv
 langchain-community
 langchain-text-splitters
-sentence-transformers
-langchain-huggingface
 gunicorn

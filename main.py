@@ -6,11 +6,11 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from dotenv import load_dotenv
 
-from langchain_community.document_loaders import TextLoader
+# from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import MarkdownHeaderTextSplitter
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_chroma import Chroma
+# from langchain_huggingface import HuggingFaceEmbeddings
+# from langchain_chroma import Chroma
 from langchain_core.prompts import PromptTemplate
 
 # Load env vars
