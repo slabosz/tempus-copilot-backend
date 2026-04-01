@@ -1,0 +1,1 @@
+Wants to integrate test results directly into Epic (their EHR). Says logging into a separate portal is a dealbreaker.
