@@ -40,12 +40,13 @@ with open("data/knowledge_base.md", "r", encoding="utf-8") as f:
 
 splits = markdown_splitter.split_text(kb_text)
 
-# Init RAG Embeddings
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# Disable RAG engine for demo to increase speeds
+# # Init RAG Embeddings
+# embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 
-# Create an in-memory Chroma vector store
-vectorstore = Chroma.from_documents(documents=splits, embedding=embeddings)
-retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
+# # Create an in-memory Chroma vector store
+# vectorstore = Chroma.from_documents(documents=splits, embedding=embeddings)
+# retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
 # Init the Gemini LLM
 llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.2)
